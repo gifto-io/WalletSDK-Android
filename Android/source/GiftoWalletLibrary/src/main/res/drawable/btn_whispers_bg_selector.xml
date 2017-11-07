@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+
+            <gradient
+                android:type="linear"
+                android:startColor="@color/whispers_btn_bg_left_slt"
+                android:endColor="@color/whispers_btn_bg_right_slt"/>
+            <corners android:radius="20dp"/>
+
+        </shape>
+    </item>
+
+    <item android:state_pressed="false" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+
+            <gradient
+                android:type="linear"
+                android:startColor="@color/whispers_btn_bg_left"
+                android:endColor="@color/whispers_btn_bg_right"/>
+
+            <corners android:radius="20dp"/>
+
+        </shape>
+    </item>
+
+</selector>

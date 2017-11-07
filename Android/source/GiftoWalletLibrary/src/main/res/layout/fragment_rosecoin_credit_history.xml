@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.gifto.wallet.pullandloadmore.LoadMoreListView
+        android:id="@+id/lv_credit_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@color/edoopad_bg_light_grey"/>
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:textColor="@color/edoopad_text_color_dark_grey"
+        android:textSize="25sp"
+        android:text="@string/no_history"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/transparent"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/GiftoAppBar"
+    app:popupTheme="@style/GiftoAppTheme"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    tools:context=".ui.activity.GiftoActivity">
+
+</android.support.v7.widget.Toolbar>
