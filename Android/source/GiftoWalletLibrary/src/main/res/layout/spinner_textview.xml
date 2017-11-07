@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:textColor="@color/edoopad_text_color_dark_grey"
+    android:textSize="15sp"
+    android:text="Spinner" />
+
+
+
+
+
+

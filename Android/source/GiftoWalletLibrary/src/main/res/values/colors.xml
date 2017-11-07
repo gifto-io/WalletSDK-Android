@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="edoopad_white">#ffffff</color>
+    <color name="edoopad_transparent_grey">#99333333</color>
+    <color name="edoopad_text_color_light_grey">#8CA0B3</color>
+    <color name="edoopad_text_color_dark_grey">#4A4A4A</color>
+
+    <color name="edoopad_text_color_price_light_grey">#8CA0B3</color>
+    <color name="edoopad_bg_grey">#E5E5E5</color>
+    <color name="edoopad_bg_dark_grey">#919FB2</color>
+    <color name="edoopad_bg_light_grey">#F2F2F2</color>
+    <color name="edoopad_bg_red">#ec1c84</color>
+    <color name="hana_language_color">#929292</color>
+
+    <color name="colorPrimary">#de0674</color>
+    <color name="colorPrimaryDark">#b3de0674</color>
+    <color name="colorAccent">#de0674</color>
+
+    <!-- Secondary color -->
+    <color name="whispers_blue">#3082E2</color>
+    <color name="whispers_green">#7ed321</color>
+    <color name="whispers_red">#ff2d2d</color>
+    <color name="whispers_pink">#ec1c84</color>
+
+    <!-- Background color -->
+    <color name="whisper_bg_disover_top">#9b3cb7</color>
+    <color name="whisper_bg_disover_bottom">#ff396f</color>
+
+    <!-- Button background color -->
+    <color name="whispers_btn_bg_left">#ff3194</color>
+    <color name="whispers_btn_bg_right">#da006f</color>
+    <color name="whispers_btn_bg_left_slt">#b3ff3194</color>
+    <color name="whispers_btn_bg_right_slt">#b3da006f</color>
+
+    <!-- PullToRefreshAndLoadmore -->
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+
+    <color name="processing_color">#ffc02d</color>
+
+    <!-- FingerPrint -->
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+</resources>

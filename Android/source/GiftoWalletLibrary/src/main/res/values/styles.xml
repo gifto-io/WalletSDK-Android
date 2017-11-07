@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="GiftoAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeTransparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/edoopad_transparent_grey</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="NoTitle" parent="android:Theme.NoTitleBar" />
+
+    <!-- AppBar Style -->
+
+    <style name="GiftoAppBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="selectableItemBackground">@drawable/btn_white_grey_background_selector</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/whispers_pink</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButtonOverflowStyle</item>-->
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+    </style>
+
+    <style name="DialogSlideAnimation">
+        <item name="android:windowEnterAnimation">@anim/fragment_slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/fragment_slide_out_bottom</item>
+    </style>
+
+    <style name="noAnimTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@color/edoopad_transparent_grey</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="GiftoPopupAnimation">
+        <item name="@android:windowEnterAnimation">@anim/rosecoin_zoom_in</item>
+        <item name="@android:windowExitAnimation">@anim/rosecoin_zoom_out</item>
+    </style>
+
+    <style name="GiftoFadePopupAnimation">
+        <item name="@android:windowEnterAnimation">@anim/rosecoin_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/rosecoin_fade_out</item>
+    </style>
+
+</resources>
