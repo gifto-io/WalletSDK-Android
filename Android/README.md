@@ -138,7 +138,7 @@
     * Refactor "rosecoin" to "gifto"
     * Change repository from "https://dl.bintray.com/rosecoin-io/maven" to "https://dl.bintray.com/gifto-io/maven"
     * Change package id from "io.rosecoin.wallet" to "io.gifto.wallet"
-    * Change github repository: https://github.com/Giftoio/GiftoWalletSDK.git
+    * Change github repository: https://github.com/gifto-io/WalletSDK-Android.git
     
   * **Version 2.0.1: (https://github.com/rosecoin-io/GiftoWalletSDK/tree/master/Android)**
     * Checking wallet's data before create new wallet
