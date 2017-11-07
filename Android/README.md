@@ -6,24 +6,24 @@
 * Build-in GUI
   * **Home**
   
- ![Screenshot](https://github.com/Giftoio/GiftoWalletSDK/blob/master/Android/screenshots/screenshot_home.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_home.png)
   
   * **Create Wallet**
   
- ![Screenshot](https://github.com/Giftoio/GiftoWalletSDK/blob/master/Android/screenshots/screenshot_create.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_create.png)
   
   * **View Wallet Address**
   
- ![Screenshot](https://github.com/Giftoio/GiftoWalletSDK/blob/master/Android/screenshots/screenshot_address.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_address.png)
 
   * **Transfer Gifto**
   
- ![Screenshot](https://github.com/Giftoio/GiftoWalletSDK/blob/master/Android/screenshots/screenshot_transfer.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_transfer.png)
 
   * **View Transaction History**
   
- ![Screenshot](https://github.com/Giftoio/GiftoWalletSDK/blob/master/Android/screenshots/screenshot_history.png)
- ![Screenshot](https://github.com/Giftoio/GiftoWalletSDK/blob/master/Android/screenshots/screenshot_history_detail.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_history.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_history_detail.png)
 
 * Supported APIs:
   * **Create Gifto Wallet using identity data and password**
