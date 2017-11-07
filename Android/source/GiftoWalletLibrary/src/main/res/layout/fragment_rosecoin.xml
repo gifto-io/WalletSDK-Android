@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/icon_blockchain_balance"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/rosecoin"/>
+
+                    <TextView
+                        android:id="@+id/tv_blockchain_rosecoin_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_blockchain_balance"
+                        android:padding="20dp"
+                        android:textColor="@color/edoopad_text_color_dark_grey"
+                        android:textSize="16sp"
+                        android:text="@string/rosecoin_balance"/>
+
+                    <TextView
+                        android:id="@+id/tv_blockchain_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_blockchain_rosecoin_label"
+                        android:layout_alignParentRight="true"
+                        android:gravity="end"
+                        android:ellipsize="none"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/whispers_pink"
+                        android:textSize="16sp"
+                        android:text="0"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_wallet_balance_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/icon_internal_balance"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/rosecoin"/>
+
+                    <TextView
+                        android:id="@+id/tv_internal_rosecoin_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_internal_balance"
+                        android:padding="20dp"
+                        android:textColor="@color/edoopad_text_color_dark_grey"
+                        android:textSize="16sp"
+                        android:text="Internal Balance"/>
+
+                    <TextView
+                        android:id="@+id/tv_internal_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_internal_rosecoin_label"
+                        android:layout_alignParentRight="true"
+                        android:gravity="end"
+                        android:ellipsize="none"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/whispers_pink"
+                        android:textSize="16sp"
+                        android:text="0"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_move_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white_grey_background_selector"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/icon_move_history"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_credit"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_move_history"
+                        android:padding="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/edoopad_text_color_dark_grey"
+                        android:textSize="16sp"
+                        android:text="Move Gifto History"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white_grey_background_selector">
+
+                    <ImageView
+                        android:id="@+id/icon_transfer"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_transfer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_transfer"
+                        android:padding="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/edoopad_text_color_dark_grey"
+                        android:textSize="16sp"
+                        android:text="@string/transfer_rosecoin"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white_grey_background_selector"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/icon_gift"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_transfer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_gift"
+                        android:padding="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/edoopad_text_color_dark_grey"
+                        android:textSize="16sp"
+                        android:text="@string/tip_rosecoin"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_transfer_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white_grey_background_selector"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/icon_transfer_history"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_credit"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_transfer_history"
+                        android:padding="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/edoopad_text_color_dark_grey"
+                        android:textSize="16sp"
+                        android:text="Transfer Gifto History"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_create_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white_grey_background_selector"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/icon_create_wallet"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_payment"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_create_wallet"
+                        android:padding="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/whispers_red"
+                        android:textSize="16sp"
+                        android:text="@string/create_rosecoin_wallet"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sell_buy_rosecoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/gray_1"
+                        android:alpha="0.8"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_buy_rosecoin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_white_grey_background_selector">
+
+                        <ImageView
+                            android:id="@+id/icon_buy_rosecoin"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/icon_credit"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon_buy_rosecoin"
+                            android:padding="20dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/edoopad_text_color_dark_grey"
+                            android:textSize="16sp"
+                            android:text="@string/buy_rosecoin"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/arrow_right"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_sell_rosecoin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_white_grey_background_selector"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/icon_sell_rosecoin"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/icon_credit"
+                            android:rotation="180"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon_sell_rosecoin"
+                            android:padding="20dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/edoopad_text_color_dark_grey"
+                            android:textSize="16sp"
+                            android:text="@string/sell_rosecoin"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/arrow_right"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_move"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_white_grey_background_selector"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/icon_move"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/icon_payment"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon_move"
+                            android:padding="20dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/edoopad_text_color_dark_grey"
+                            android:textSize="16sp"
+                            android:text="@string/refresh_rosecoin_on_blockchain"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/arrow_right"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="20dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/btn_show_wallet_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_whispers_bg_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:textSize="16sp"
+                        android:text="@string/show_wallet_address"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="Wallet SDK Demo"
+                android:textSize="10sp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

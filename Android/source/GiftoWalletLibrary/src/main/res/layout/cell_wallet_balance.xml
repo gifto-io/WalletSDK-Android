@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_gifto_cell_listview_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_balance"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/rosecoin"/>
+
+        <TextView
+            android:id="@+id/tv_rosecoin_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_balance"
+            android:padding="20dp"
+            android:textColor="@color/edoopad_text_color_dark_grey"
+            android:textSize="16sp"
+            android:text="@string/rosecoin_balance"/>
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_rosecoin_label"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/whispers_pink"
+            android:textSize="16sp"
+            android:text="0"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

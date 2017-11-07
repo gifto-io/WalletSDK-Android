@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whispers_rounded_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/edoopad_text_color_price_light_grey"
+            android:gravity="center"
+            android:text="@string/please_enter_amount_password_to_continue"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_amount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp"
+                android:textColor="@color/edoopad_text_color_light_grey"
+                android:text="@string/amount_rosecoin"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_edit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_amount_label"
+                android:background="@drawable/background_gifto_white_rectangle">
+
+                <ImageView
+                    android:id="@+id/icon_rosecoin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rosecoin"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/icon_rosecoin"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:background="@null"
+                    android:text=""
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:enabled="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_amount_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_edit_amount"
+                android:layout_marginLeft="25dp"
+                android:textSize="13sp"
+                android:textColor="@color/whispers_red"
+                android:text="@string/amount_noti"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="15sp"
+                android:textColor="@color/edoopad_text_color_light_grey"
+                android:text="@string/password"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_password_label"
+                android:background="@drawable/background_gifto_white_rectangle">
+
+                <ImageView
+                    android:id="@+id/icon_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/lock_icon"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/icon_password"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:text=""
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:enabled="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_whispers_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:textSize="15sp"
+                    android:text="@string/action_continue"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
