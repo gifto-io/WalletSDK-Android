@@ -47,7 +47,7 @@
 
 * Add the following dependency to your module's build.gradle file:
 ```
-  compile 'io.gifto.wallet:gifto-wallet-sdk:2.0.2'
+  compile 'io.gifto.wallet:gifto-wallet-sdk:2.0.3'
 ```
 
 ### Usage
@@ -129,6 +129,11 @@
   ```
   
 ### Version Information
+
+  * **Version 2.0.3:**
+    * Bug fixes
+    * Update resources
+    
   * **Version 2.0.2:**
     * Refactor "rosecoin" to "gifto"
     * Change repository from "https://dl.bintray.com/rosecoin-io/maven" to "https://dl.bintray.com/gifto-io/maven"
