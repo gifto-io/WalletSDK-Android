@@ -111,6 +111,18 @@
     <string name="new_fingerprint_enrolled_description"> 새로운 지문이이 장치에 추가되었으므로 암호가 필요합니다.</string>
     <string name="use_fingerprint_in_future"> 앞으로 지문을 사용하십시오.</string>
     <string name="description_fingerprint_icon"> 지문 아이콘</string>
+
+    <string name="ether_balance"> 주소 잔액 : </string>
+     <string name="exchange_rate"> 환율 : </string>
+     <string name="gas_limit"> Gas 한도 </string>
+     <string name="gas_price"> Gas 가격 </string>
+     <string name="action_buy"> 구매 </string>
+     <string name="축하합니다"> 축하합니다. </string>
+     <string name="trade_success_message"> 트랜잭션이 블록 체인으로 \n브로드 캐스팅되었습니다 </string>
+     <string name="trade_success_guide"> 앱을 닫거나 새로운 교환을 만들 수 있습니다. </string>
+     <string name="action_new_exchange"> 새 Exchange </string>
+     <string name="kyber_powered"> Kyber 네트워크를 통해 제공 </string>
+
     <!-- ============================ -->
 
 

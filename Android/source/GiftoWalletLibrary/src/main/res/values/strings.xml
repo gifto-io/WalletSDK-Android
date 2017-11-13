@@ -122,6 +122,17 @@
     <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your passphrase is required.</string>
     <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
     <string name="description_fingerprint_icon">Fingerprint icon</string>
+
+    <string name="ether_balance">Address Balance:</string>
+    <string name="exchange_rate">Exchange Rate:</string>
+    <string name="gas_limit">Gas Limit</string>
+    <string name="gas_price">Gas Price</string>
+    <string name="action_buy">Buy</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="trade_success_message">Your transaction has been\nbroadcasted to the blockchain</string>
+    <string name="trade_success_guide">You can close the app or make a new exchange</string>
+    <string name="action_new_exchange">New Exchange</string>
+    <string name="kyber_powered">Powered by Kyber Network</string>
     <!-- ============================ -->
 
 

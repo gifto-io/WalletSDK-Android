@@ -111,6 +111,18 @@
     <string name="new_fingerprint_enrolled_description">Có dấu vân tay mới được đăng ký. Vui lòng nhập mật khẩu để tiếp tục.</string>
     <string name="use_fingerprint_in_future">Sử dụng vân tay cho lần sau</string>
     <string name="description_fingerprint_icon">Vân tay</string>
+
+    <string name="ether_balance"> Số dư hiện có: </string>
+     <string name="exchange_rate"> Tỷ giá: </string>
+     <string name="gas_limit"> Giới hạn Gas </string>
+     <string name="gas_price"> Giá Gas </string>
+     <string name="action_buy"> Mua </string>
+     <string name="congratulations"> Xin chúc mừng </string>
+     <string name="trade_success_message"> Giao dịch của bạn đã được chuyển tới blockchain </string>
+     <string name="trade_success_guide"> Bạn có thể đóng ứng dụng hoặc thực hiện giao dịch mới </string>
+     <string name="action_new_exchange"> Giao dịch mới </string>
+     <string name="kyber_powered"> Được cung cấp bởi Kyber Network </string>
+
     <!-- ============================ -->
 
 

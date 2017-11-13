@@ -112,6 +112,17 @@
     <string name="use_fingerprint_in_future">今後指紋を使用する</string>
     <string name="description_fingerprint_icon">指紋アイコン</string>
 
+    <string name="ether_balance">住所の残高：</string>
+     <string name="exchange_rate">為替レート：</string>
+     <string name="gas_limit">Gas限界</string>
+     <string name="gas_price">Gas価格</string>
+     <string name="action_buy">購入</string>
+     <string name="congratulations">おめでとうございます</string>
+     <string name="trade_success_message">トランザクションはブロックチェ\nーンにブロードキャストされています。</string>
+     <string name="trade_success_guide">あなたは、アプリケーションを閉じたり、新しい交換を行うことができます</string>
+     <string name="action_new_exchange">新しいExchange </string>
+     <string name="kyber_powered"> Kyber Networkによって提供されます</string>
+
     <!-- ============================ -->
 
     <!-- ============================ -->

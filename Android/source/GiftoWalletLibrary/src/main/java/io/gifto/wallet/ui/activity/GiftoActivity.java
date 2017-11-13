@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import de.greenrobot.event.EventBus;
 import io.gifto.wallet.R;
@@ -28,7 +29,9 @@ import io.gifto.wallet.ui.base.BaseFragment;
 import io.gifto.wallet.ui.dialog.GiftoTransactionDetailDialog;
 import io.gifto.wallet.ui.dialog.ShowWalletAddressDialog;
 import io.gifto.wallet.ui.fragment.GiftoWalletMainFragment;
+import io.gifto.wallet.ui.fragment.TradeCoinFragment;
 import io.gifto.wallet.ui.manager.FragmentChangingManager;
+import io.gifto.wallet.ui.manager.IFragmentManager;
 import io.gifto.wallet.ui.manager.MainInterface;
 import io.gifto.wallet.utils.ScreenUtils;
 import io.gifto.wallet.utils.Utils;
@@ -61,6 +64,8 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
     }
 
     Toolbar toolbar;
+    TextView tvTitle;
+    TextView tvKyber;
 
     private BaseFragment selectedFragment;
     private BaseFragment savedFragment;
@@ -112,6 +117,9 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
         CustomSharedPreferences.Init(getApplicationContext());
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        tvTitle = (TextView) findViewById(R.id.tv_title);
+        tvKyber = (TextView) findViewById(R.id.tv_kyber);
+        tvKyber.setVisibility(View.GONE);
 
         Utils.setUpForceHideSoftKeyboardWhenTouchOutsideEditText(this, getWindow().getDecorView().getRootView());
 
@@ -121,6 +129,14 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
 
         if (getIntent().getExtras() != null && getIntent().getExtras().containsKey(EXTRA_AVATAR))
             avatar = getIntent().getStringExtra(EXTRA_AVATAR);
+
+        onBuyCoinClickListener = new OnBuyCoinClickListener() {
+            @Override
+            public void onClick(View view, IFragmentManager fragmentManager) {
+                if (fragmentManager != null)
+                    fragmentManager.AddFragment(new TradeCoinFragment(), true);
+            }
+        };
 
         GiftoWalletMainFragment roseCoinFragment = new GiftoWalletMainFragment();
         DisplayFragment(roseCoinFragment);
@@ -230,11 +246,13 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
     {
         if (Utils.isStringValid(title))
         {
-            getSupportActionBar().setTitle(title);
+            getSupportActionBar().setTitle("");
+            tvTitle.setText(title);
         }
         else
         {
             getSupportActionBar().setTitle("");
+            tvTitle.setText("");
         }
     }
 
@@ -256,6 +274,17 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
             else
                 rlTopContainer.setPadding(0, 0, 0, 0);
         }
+    }
+
+    /**
+     * Show or hide kyber textview
+     *
+     * @param visibility visibility {VISIBLE, GONE}
+     */
+    public void setTextViewKyber(int visibility)
+    {
+        if (tvKyber != null)
+            tvKyber.setVisibility(visibility);
     }
 
     /**

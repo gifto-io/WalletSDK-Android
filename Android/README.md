@@ -25,6 +25,11 @@
  ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_history.png)
  ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_history_detail.png)
 
+  * **Kyber Buying**
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_kyber_buying.png)
+ ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_kyber_success.png)
+
+
 * Supported APIs:
   * **Create Gifto Wallet using identity data and password**
   * **Get Gifto Wallet Detail of an account using identity data**
@@ -47,7 +52,7 @@
 
 * Add the following dependency to your module's build.gradle file:
 ```
-  compile 'io.gifto.wallet:gifto-wallet-sdk:2.0.3'
+  compile 'io.gifto.wallet:gifto-wallet-sdk:2.0.4'
 ```
 
 ### Usage
@@ -129,6 +134,9 @@
   ```
   
 ### Version Information
+
+  * **Version 2.0.4:**
+    * Add demo GUI for Kyber buying
 
   * **Version 2.0.3:**
     * Bug fixes

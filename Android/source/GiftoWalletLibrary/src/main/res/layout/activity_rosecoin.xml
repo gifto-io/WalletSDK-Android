@@ -21,6 +21,37 @@
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Gifto Wallet"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_kyber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/kyber_powered"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
         </android.support.v7.widget.Toolbar>
 
         <TextView

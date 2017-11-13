@@ -3,6 +3,7 @@ package io.gifto.wallet;
 import android.content.Context;
 import android.content.Intent;
 
+import io.gifto.wallet.interfaces.OnBuyCoinClickListener;
 import io.gifto.wallet.ui.activity.GiftoActivity;
 
 /**
@@ -45,6 +46,14 @@ public class WalletBuildInGUIBuilder {
         intent.putExtra(GiftoActivity.EXTRA_AVATAR, avatar);
         return this;
     }
+
+    /*
+    public WalletBuildInGUIBuilder setOnBuyCoinClickListener(OnBuyCoinClickListener listener)
+    {
+        GiftoActivity.onBuyCoinClickListener = listener;
+        return this;
+    }
+    */
 
     /**
      * Start Wallet GUI

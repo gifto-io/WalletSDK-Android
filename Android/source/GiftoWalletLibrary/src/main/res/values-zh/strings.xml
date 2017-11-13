@@ -111,6 +111,17 @@
     <string name="new_fingerprint_enrolled_description">一个新的指纹被添加到这个设备，所以你的密码是必需的。</string>
     <string name="use_fingerprint_in_future">将来使用指纹</string>
     <string name="description_fingerprint_icon">指纹图标</string>
+
+    <string name="ether_balance">地址余额：</string>
+    <string name="exchange_rate">汇率：</string>
+    <string name="gas_limit">Gas限制</string>
+    <string name="gas_price">Gas价钱</string>
+    <string name="action_buy">购买</string>
+    <string name="congratulations">祝贺</string>
+    <string name="trade_success_message">您的交易已被广播到区块链</string>
+    <string name="trade_success_guide">您可以关闭应用程序或进行新的交换</string>
+    <string name="action_new_exchange">新交易所</string>
+    <string name="kyber_powered">由Kyber网络提供支持</string>
     <!-- ============================ -->
 
 

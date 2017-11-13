@@ -139,6 +139,9 @@
     public static boolean isUsingStorePassphrase(...);
     public static void ClearData ();
 }
+
+-keep class io.gifto.wallet.ui.activity.GiftoActivity { *; }
+
 -keepparameternames
 -keep class io.gifto.wallet.WalletBuildInGUIBuilder { *; }
 
