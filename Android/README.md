@@ -26,6 +26,7 @@
  ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_history_detail.png)
 
   * **Kyber Buying**
+
  ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_kyber_buying.png)
  ![Screenshot](https://github.com/gifto-io/WalletSDK-Android/blob/master/Android/screenshots/screenshot_kyber_success.png)
 
