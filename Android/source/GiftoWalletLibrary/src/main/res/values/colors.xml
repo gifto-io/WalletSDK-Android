@@ -36,6 +36,8 @@
     <color name="whispers_btn_bg_right">#da006f</color>
     <color name="whispers_btn_bg_left_slt">#b3ff3194</color>
     <color name="whispers_btn_bg_right_slt">#b3da006f</color>
+    <color name="whispers_btn_green">#199117</color>
+    <color name="whispers_btn_green_slt">#0f600e</color>
 
     <!-- PullToRefreshAndLoadmore -->
     <color name="dark_slate_gray">#2F4F4F</color>

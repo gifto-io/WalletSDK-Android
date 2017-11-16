@@ -45,13 +45,13 @@ public enum WalletCurrency {
     public static int getIconResourceByCode(String code)
     {
         if (!Utils.isStringValid(code))
-            return R.drawable.rosecoin;
+            return R.drawable.gifto;
 
         if (code.equals(GIFTO.getCode()))
-            return R.drawable.rosecoin;
+            return R.drawable.gifto;
         if (code.equals(KRYPTOR.getCode()))
             return R.drawable.kryptor;
 
-        return R.drawable.rosecoin;
+        return R.drawable.gifto;
     }
 }
