@@ -32,7 +32,7 @@ public class Constants
     /**
      *  Gifto currency code
      */
-    public static final String CURRENCY_CODE = "RSC";
+    public static final String CURRENCY_CODE = "GTO";
 
     /**
      * Kryptor currency code
@@ -42,5 +42,7 @@ public class Constants
     public static final int USER_NAME_LIMIT_CHARACTER = 15;
 
     public static final boolean DISPLAY_MULTIPLE_COIN = false;
+
+    public static final boolean IS_ROSECOIN = false;
     /***************************/
 }

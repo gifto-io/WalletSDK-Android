@@ -5,7 +5,7 @@ apply plugin: 'com.novoda.bintray-release'
 publish {
     groupId = 'io.gifto.wallet'
     artifactId = 'gifto-wallet-sdk'
-    publishVersion = '2.0.4'
+    publishVersion = '2.0.5'
     desc = 'Gifto Wallet SDK'
     licences = ['Apache-2.0']
     uploadName='GiftoWalletSDK'
@@ -19,13 +19,13 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 204
-        versionName "2.0.4"
+        versionCode 205
+        versionName "2.0.5"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+            abiFilters "armeabi", "armeabi-v7a", "x86_64" //, "arm64-v8a"
         }
     }
     buildTypes {

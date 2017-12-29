@@ -1,6 +1,7 @@
 package io.gifto.wallet.model;
 
 import io.gifto.wallet.R;
+import io.gifto.wallet.utils.Constants;
 import io.gifto.wallet.utils.Utils;
 
 /**
@@ -9,7 +10,8 @@ import io.gifto.wallet.utils.Utils;
 
 public enum WalletCurrency {
 
-    GIFTO("RSC", "Gifto"),
+    ROSE_COIN("RSC", "RoseCoin"),
+    GIFTO("GTO", "Gifto"),
     KRYPTOR("KRYPTOR", "Kryptor");
 
     private String code;
@@ -34,6 +36,8 @@ public enum WalletCurrency {
         if (!Utils.isStringValid(code))
             return "";
 
+        if (Constants.IS_ROSECOIN && code.equals(ROSE_COIN.getCode()))
+            return ROSE_COIN.getName();
         if (code.equals(GIFTO.getCode()))
             return GIFTO.getName();
         if (code.equals(KRYPTOR.getCode()))
@@ -47,6 +51,8 @@ public enum WalletCurrency {
         if (!Utils.isStringValid(code))
             return R.drawable.gifto;
 
+        if (Constants.IS_ROSECOIN && code.equals(ROSE_COIN.getCode()))
+            return R.drawable.rosecoin;
         if (code.equals(GIFTO.getCode()))
             return R.drawable.gifto;
         if (code.equals(KRYPTOR.getCode()))

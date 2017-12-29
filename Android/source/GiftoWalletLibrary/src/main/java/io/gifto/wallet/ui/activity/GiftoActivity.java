@@ -25,6 +25,7 @@ import de.greenrobot.event.EventBus;
 import io.gifto.wallet.R;
 import io.gifto.wallet.event.OnQRCodeDetectedEvent;
 import io.gifto.wallet.interfaces.OnBuyCoinClickListener;
+import io.gifto.wallet.model.WalletCurrency;
 import io.gifto.wallet.ui.base.BaseFragment;
 import io.gifto.wallet.ui.dialog.GiftoTransactionDetailDialog;
 import io.gifto.wallet.ui.dialog.ShowWalletAddressDialog;
@@ -33,6 +34,7 @@ import io.gifto.wallet.ui.fragment.TradeCoinFragment;
 import io.gifto.wallet.ui.manager.FragmentChangingManager;
 import io.gifto.wallet.ui.manager.IFragmentManager;
 import io.gifto.wallet.ui.manager.MainInterface;
+import io.gifto.wallet.utils.Constants;
 import io.gifto.wallet.utils.ScreenUtils;
 import io.gifto.wallet.utils.Utils;
 import io.gifto.wallet.utils.common.CustomSharedPreferences;
@@ -130,13 +132,14 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
         if (getIntent().getExtras() != null && getIntent().getExtras().containsKey(EXTRA_AVATAR))
             avatar = getIntent().getStringExtra(EXTRA_AVATAR);
 
-        onBuyCoinClickListener = new OnBuyCoinClickListener() {
-            @Override
-            public void onClick(View view, IFragmentManager fragmentManager) {
-                if (fragmentManager != null)
-                    fragmentManager.AddFragment(new TradeCoinFragment(), true);
-            }
-        };
+        if (!Constants.IS_ROSECOIN && Constants.CURRENCY_CODE.equals(WalletCurrency.GIFTO.getCode()))
+            onBuyCoinClickListener = new OnBuyCoinClickListener() {
+                @Override
+                public void onClick(View view, IFragmentManager fragmentManager) {
+                    if (fragmentManager != null)
+                        fragmentManager.AddFragment(new TradeCoinFragment(), true);
+                }
+            };
 
         GiftoWalletMainFragment roseCoinFragment = new GiftoWalletMainFragment();
         DisplayFragment(roseCoinFragment);
@@ -147,7 +150,7 @@ public class GiftoActivity extends AppCompatActivity implements MainInterface {
     @Override
     protected void onDestroy()
     {
-        onBuyCoinClickListener = null;
+//        onBuyCoinClickListener = null;
         DismissAllDialogs();
         if (session == mSession)
             instance = null;
