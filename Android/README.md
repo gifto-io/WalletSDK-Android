@@ -53,7 +53,7 @@
 
 * Add the following dependency to your module's build.gradle file:
 ```
-  compile 'io.gifto.wallet:gifto-wallet-sdk:2.0.4'
+  compile 'io.gifto.wallet:gifto-wallet-sdk:2.0.5'
 ```
 
 ### Usage
@@ -135,6 +135,9 @@
   ```
   
 ### Version Information
+
+  * **Version 2.0.5:**
+    * Update currency code
 
   * **Version 2.0.4:**
     * Add demo GUI for Kyber buying
