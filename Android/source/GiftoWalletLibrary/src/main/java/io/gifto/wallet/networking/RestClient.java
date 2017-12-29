@@ -56,7 +56,7 @@ public class RestClient
     private static final int ROSECOIN_CONNECTION_TIMEOUT = 150; //second
     private static final int ROSECOIN_READ_WRITE_TIMEOUT = 150; //second
 
-    private static final String BASE_WALLET_URL = "https://wallet.gifto.io/";
+    private static final String BASE_WALLET_URL = "https://wallet.upliveapps.com/"; //"https://wallet.gifto.io/";
 
     private RestGiftoWalletService restGiftoWalletService;
 
